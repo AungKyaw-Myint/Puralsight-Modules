@@ -5,11 +5,18 @@ package com.pluralsight;
 public class Main {
     static void main() {
 
-        Quote q1=new Quote("Steve Jobs",
+        Quote q1=new Quote(
                 "Innovation distinguishes between a leader and a follower.",
+                "Steve Jobs",
                 "Technology",
                 2001);
 
         System.out.println(q1.toString());
+
+        QuoteManager manager = new QuoteManager();
+
+        manager.printAllQuotes();
+
+
     }
 }

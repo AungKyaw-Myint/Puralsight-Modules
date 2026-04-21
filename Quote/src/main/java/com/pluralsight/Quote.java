@@ -7,7 +7,7 @@ public class Quote {
     private String category;
     private int year;
 
-    public Quote(String author, String text, String category, int year) {
+    public Quote(String text, String author, String category, int year) {
         this.author = author;
         this.text = text;
         this.category = category;
@@ -53,8 +53,9 @@ public class Quote {
     @Override
     public String toString() {
         return "Quote{" +
-                "author='" + author + '\'' +
-                ", text='" + text + '\'' +
+
+                "text='" + text + '\'' +
+                ", author='" + author + '\'' +
                 ", category='" + category + '\'' +
                 ", year=" + year +
                 '}';
