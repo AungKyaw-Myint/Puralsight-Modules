@@ -6,10 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Quote" />
-        <module name="bedtime-stories" />
+        <module name="search-inventory" />
         <module name="neighborhood-library" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bedtime-stories" target="26" />
+      <module name="Quote" target="26" />
+    </bytecodeTargetLevel>
   </component>
 </project>
