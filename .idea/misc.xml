@@ -5,6 +5,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/neighborhood-library/pom.xml" />
+        <option value="$PROJECT_DIR$/Quote/pom.xml" />
       </list>
     </option>
   </component>
