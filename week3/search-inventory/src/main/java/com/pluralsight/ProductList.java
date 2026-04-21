@@ -7,10 +7,11 @@ import java.util.List;
 public class ProductList {
 
     private ArrayList<Product> products= new ArrayList<>();
+    final File file = new File("/C:/pluralsight/Puralsight-Modules/week3/search-inventory/src/main/resources/inventory.csv");
 
     public ArrayList<Product> fileReader(){
         try {
-            File file = new File("/C:/pluralsight/Puralsight-Modules/week3/search-inventory/src/main/resources/inventory.csv");
+
             BufferedReader reader = new BufferedReader(new FileReader(file));
 
             String line;
@@ -33,5 +34,20 @@ public class ProductList {
         }
 
         return products;
+    }
+
+    public void fileWriter(Product newProduct){
+        try (
+                FileWriter writer = new FileWriter(file, true)) {
+
+            writer.write(
+                    newProduct.getId()+"|"+
+                    newProduct.getName()+"|"+
+                    newProduct.getPrice()+"|"
+            );
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
