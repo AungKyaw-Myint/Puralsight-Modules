@@ -12,6 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bedtime-stories" target="26" />
+      <module name="online-store" target="26" />
       <module name="Quote" target="26" />
     </bytecodeTargetLevel>
   </component>
