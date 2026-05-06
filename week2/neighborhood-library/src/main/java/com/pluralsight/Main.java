@@ -27,8 +27,15 @@ public class Main {
             new Book(19, "978000000019", "DevOps Handbook", false, null),
             new Book(20, "978000000020", "System Design", true, "Jack")
     };
+
     public static void main(String[] args) {
 
+        int result=2+3*4;
+        System.out.println(result +"----");
+
+
+
+        /*
         Scanner sc= new Scanner(System.in);
         boolean programStatus= true;
 
@@ -72,6 +79,8 @@ public class Main {
 
 
 //        isCheckedOutBooks(true);
+
+         */
 
     }
 
