@@ -15,29 +15,36 @@ public class Testing2 {
 
 
     public static List<List<Integer>> threeSum(int[] nums) {
-        Set<List<Integer>> result=new HashSet<>();
-        Set<Integer> set=new HashSet<>();
+        Arrays.sort(nums);
 
-        for(int i=0; i<nums.length; i++){
-            set.add(nums[i]);
-        }
+        List<List<Integer>> response = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            int num = nums[i];
+            if (i > 0 && nums[i] == nums[i - 1]) {
+                continue;
+            }
 
-        for(int i=0; i<nums.length; i++){
-            for(int j=i+1; j<nums.length; j++){
-                int tempI=nums[i];
-                int tempJ=nums[j];
-                if(tempI != tempJ && tempJ!=tempI+tempJ && tempI!= tempI+tempJ && set.contains(tempI+tempJ)){
-                    List<Integer> list= new ArrayList<>();
-                    list.add(tempI);
-                    list.add(tempJ);
-                    list.add(tempI+tempJ);
+            int left = Math.min(i + 1, nums.length - 1);
+            int right = nums.length - 1;
+            while (left < right) {
 
-                    Collections.sort(list);
-                    result.add(list);
+                int sum = num + nums[left] + nums[right];
+                if (sum == 0) {
+                    response.add(Arrays.asList(nums[i], nums[left], nums[right]));
+                    left++;
+                    right--;
+                    while (left < right && nums[left] == nums[left - 1]) {
+                        left++;
+                    }
+                } else if (sum < 0) {
+                    left++;
+                } else {
+                    right--;
                 }
             }
+
         }
 
-        return new ArrayList<>(result);
+        return response;
     }
 }
