@@ -12,14 +12,32 @@ public class Testing {
 
         String s="aaa";
         String p="a*a";
-        int[] num1= {1,8,6,2,5,4,8,3,7};
+        int[] num1= {-1,2,1,-4};
         int[] num2= {4,6,9};
 
 //        System.out.println(findMedianSortedArrays(num1,num2));
 //        System.out.println(isMatch(s,p));
 
 //        System.out.println(maxArea(num1));
-        System.out.println(intToRoman(1994));
+        System.out.println(threeSumClosest(num1, 1));
+    }
+
+    public static int threeSumClosest(int[] nums, int target) {
+        if(nums.length<3) return 0;
+        int result = nums[0]+nums[1]+nums[2];
+
+
+        for(int i= 1; i< nums.length; i++){
+            for(int j= i+1; j< nums.length; j++){
+                for(int k=j+1; k< nums.length; k++){
+                    int temp= nums[i]+nums[j]+nums[k];
+                    if(target-temp < result){
+                        result=Math.abs(temp);
+                    }
+                }
+            }
+        }
+        return result;
     }
 
     public static String intToRoman(int num) {
