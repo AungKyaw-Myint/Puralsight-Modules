@@ -1,53 +1,31 @@
 package org.puralsight.model;
 
-public class Fighter {
+public abstract class Fighter {
     private String name;
-
     private int powerLevel;
-
     private int health;
 
-
-
     public Fighter(String name, int powerLevel, int health) {
-
         this.name = name;
-
         this.powerLevel = powerLevel;
-
         this.health = health;
-
     }
 
-
+    abstract void specialAbility();
 
     public void attack() {
-
         System.out.println(name + " attacks with power level " + powerLevel + "!");
-
     }
-
-
 
     public void takeDamage(int damage) {
-
         health -= damage;
-
         System.out.println(name + " takes " + damage + " damage.");
-
         System.out.println("Health left: " + health);
-
     }
-
-
 
     public String getName() {
-
         return name;
-
     }
-
-
 
     public int getPowerLevel() {
 

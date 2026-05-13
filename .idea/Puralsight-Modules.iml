@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/week5/static-classes/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week5/static-classes/src/test" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/week6/week6-learning/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week6/assets-manager/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

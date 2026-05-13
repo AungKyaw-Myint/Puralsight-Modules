@@ -6,6 +6,11 @@ public class Namekian extends Fighter{
         super(name, powerLevel, health);
     }
 
+    @Override
+    void specialAbility() {
+
+    }
+
     public void regenerate() {
 
         int newHealthLevel = getHealth() * 2;

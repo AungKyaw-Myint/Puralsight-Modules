@@ -10,6 +10,10 @@ public class Saiyan extends Fighter {
 
     }
 
+    @Override
+    void specialAbility() {
+        System.out.println(this.getName()+" special ability.");
+    }
 
 
     public void transform() {
