@@ -14,6 +14,7 @@
       <sourceFolder url="file://$MODULE_DIR$/week6/week6-learning/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week6/abstract-assets-manager/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/week6/assets-manager/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/week7/generic-learning/src/main/java" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
